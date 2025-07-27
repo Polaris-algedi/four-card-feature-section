@@ -106,6 +106,7 @@ main > p {
   padding: var(--spacing-xl);
   padding-block-end: var(--spacing-xxl);
   border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card:first-child {
