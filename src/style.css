@@ -27,10 +27,13 @@
 
   /* Font sizes */
 
+  --font-size-xxs: 0.813rem; /* 13px */
   --font-size-base: 0.938rem; /* 15px */
   --font-size-h1: 1.5rem; /* 24px */
+  --font-size-h2: 1.25rem; /* 20px */
 
   /* Spacing */
+  --spacing-xxs: 0.25rem; /* 4px */
   --spacing-xs: 0.5rem; /* 8px */
   --spacing-sm: 0.75rem; /* 12px */
   --spacing-md: 1rem; /* 16px */
@@ -117,4 +120,19 @@ main > p {
 }
 .card:nth-child(4) {
   border-block-start: var(--border-width) solid var(--blue);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  color: var(--grey-500);
+  margin-block-end: var(--spacing-xxs);
+}
+
+.card p {
+  font-size: var(--font-size-xxs);
+  font-weight: var(--font-weight-light);
+  color: var(--grey-400);
+  line-height: 1.6;
+  letter-spacing: 0.013em;
 }
