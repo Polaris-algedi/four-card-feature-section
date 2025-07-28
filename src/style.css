@@ -58,6 +58,10 @@
   --card-mobile-width: 19.625rem; /* 314px */
   --card-desktop-width: 21.875rem; /* 350px */
 
+  /* Shadow */
+  --shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -116,8 +120,7 @@ header > p {
   padding-block-start: var(--spacing-xl);
   padding-block-end: var(--spacing-3xl);
   border-radius: var(--border-radius);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: var(--shadow);
 }
 
 .card:first-child {
@@ -157,7 +160,7 @@ h2 {
   align-self: flex-end;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   main {
     width: 100%;
     margin-block-start: var(--spacing-2xl);
