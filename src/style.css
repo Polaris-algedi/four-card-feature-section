@@ -53,7 +53,7 @@
 
   /* Widths */
   --content-mobile-width: 23.438rem; /* 375px */
-  --content-desktop-width: 37.5rem; /* 600px */
+  --content-desktop-width: 32.5rem; /* 520px */
 
   --card-mobile-width: 19.625rem; /* 314px */
   --card-desktop-width: 21.875rem; /* 350px */
@@ -82,7 +82,7 @@ main {
 
 h1 {
   font-size: var(--font-size-mobile-h1);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-light);
   color: var(--grey-400);
   letter-spacing: -0.005em;
   line-height: 1.4;
@@ -143,10 +143,10 @@ h2 {
 
 .card p {
   font-size: var(--font-size-xxs);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-normal);
   color: var(--grey-400);
   line-height: 1.6;
-  letter-spacing: 0.013em;
+  letter-spacing: 0.075em;
 }
 
 .card img {
@@ -160,7 +160,7 @@ h2 {
 @media (min-width: 768px) {
   main {
     width: 100%;
-    padding: 0;
+    margin-block-start: var(--spacing-2xl);
   }
 
   header {
